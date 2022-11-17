@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">CALCULADORA IMC</string>
+    <string name="desnutrição_nível_III">",\n Procure orientação médica" IMC</string>
+
+    <string name="obesidade_desnutricao"><a href="https://bvsms.saude.gov.br/bvs/publicacoes/obesidade_desnutricao.pdf">Artigo Sobre Obesidade e Desnutrição</a></string>
+
+    <string name="imc_informacoes"><a href="https://www.uol.com.br/vivabem/faq/imc-como-calcular-tabela-dicas-como-melhorar-e-mais.htm">Informações Sobre IMC (UOL)</a></string>
+
+     <string name="obesidade_bvsms"><a href="https://bvsms.saude.gov.br/obesidade-18/">Obesidade (Ministério da Saúde)</a></string>
+
+
+
+
+</resources>
