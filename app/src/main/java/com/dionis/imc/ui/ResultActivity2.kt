@@ -1,10 +1,11 @@
-package com.dionis.imc
+package com.dionis.imc.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.LinkMovementMethod
 import android.view.View
+import com.dionis.imc.R
 import com.dionis.imc.databinding.ActivityResult2Binding
 
 class ResultActivity2 : AppCompatActivity() {

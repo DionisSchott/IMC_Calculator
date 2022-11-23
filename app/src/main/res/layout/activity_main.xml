@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/gradiente">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -9,10 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
+        android:layout_margin="24dp"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context=".ResultActivity2"
-        >
+        tools:context=".ui.ResultActivity2">
 
         <TextView
             android:id="@+id/tvTitle"
@@ -25,6 +26,25 @@
             android:textSize="28sp" />
 
         <TextView
+            android:id="@+id/tvNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="SEU NOME"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/etNome"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_shape"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black" />
+
+        <TextView
             android:id="@+id/tvWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,7 +53,7 @@
             android:textColor="@color/black" />
 
         <EditText
-            android:id="@+id/peso"
+            android:id="@+id/etPeso"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -53,7 +73,7 @@
 
 
         <EditText
-            android:id="@+id/altura"
+            android:id="@+id/etAltura"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -68,7 +88,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="calcular" />
+            android:text="calcular"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPerson"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_person_data" />
 
 
     </LinearLayout>

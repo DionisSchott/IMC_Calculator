@@ -7,9 +7,9 @@
 
     <string name="imc_informacoes"><a href="https://www.uol.com.br/vivabem/faq/imc-como-calcular-tabela-dicas-como-melhorar-e-mais.htm">Informações Sobre IMC (UOL)</a></string>
 
-     <string name="obesidade_bvsms"><a href="https://bvsms.saude.gov.br/obesidade-18/">Obesidade (Ministério da Saúde)</a></string>
-
-
+    <string name="obesidade_bvsms"><a href="https://bvsms.saude.gov.br/obesidade-18/">Obesidade (Ministério da Saúde)</a></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
