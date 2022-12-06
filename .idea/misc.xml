@@ -8,9 +8,11 @@
         <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/drawable/gradiente.xml" value="0.1" />
         <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/drawable/ic_launcher_background.xml" value="0.222" />
         <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/drawable/radiu.xml" value="0.2695" />
-        <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/layout/activity_result2.xml" value="0.25" />
-        <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/layout/fragment_home.xml" value="0.3546875" />
+        <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/layout/fragment_data.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/layout/fragment_home.xml" value="0.19230769230769232" />
+        <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/layout/fragment_result.xml" value="0.23641304347826086" />
         <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/layout/item_person_data.xml" value="0.33" />
         <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/layout/rv_person_data.xml" value="0.29259259259259257" />
         <entry key="..\:/Users/marti/Desktop/Estudo DEV/telas/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.196" />

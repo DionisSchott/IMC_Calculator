@@ -12,4 +12,6 @@
     <color name="good">#1BA33D</color>
     <color name="atention">#FFD53D</color>
     <color name="blue">#0000FF</color>
+    <color name="recycler">#455DFF</color>
+
 </resources>

@@ -11,90 +11,141 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/personData"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/recycler">
 
         <TextView
-            android:id="@+id/tvId"
+            android:id="@+id/tvName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:hint="id"
+            android:layout_margin="10dp"
+            android:text="Nome ="
+            android:textAlignment="viewStart"
             android:textColor="@color/black"
-            android:textColorHint="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textAlignment="viewStart"
-            app:layout_constraintEnd_toStartOf="@id/tvNome"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <TextView
             android:id="@+id/tvNome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:hint="nome"
+            android:layout_margin="10dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text=" ---- "
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tvName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Peso = "
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@id/tvId"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textAlignment="viewStart"
-            />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
 
         <TextView
             android:id="@+id/tvPeso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:hint="peso"
+            android:layout_margin="10dp"
+            android:text=" ---- "
             android:textColor="@color/black"
-            android:textColorHint="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/tvEight"
+            app:layout_constraintStart_toEndOf="@id/tvEight"
+            app:layout_constraintTop_toTopOf="@id/tvEight" />
+
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Altura ="
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/tvAltura"
-            app:layout_constraintTop_toBottomOf="@id/tvNome"
-            />
+            app:layout_constraintTop_toBottomOf="@id/tvEight" />
 
         <TextView
             android:id="@+id/tvAltura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:hint="altura"
+            android:layout_margin="10dp"
+            android:text=" ---- "
             android:textColor="@color/black"
-            android:textColorHint="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/tvPeso"
-            app:layout_constraintTop_toBottomOf="@id/tvNome" />
+            app:layout_constraintBottom_toBottomOf="@id/tvHeight"
+            app:layout_constraintStart_toEndOf="@id/tvHeight"
+            app:layout_constraintTop_toTopOf="@id/tvHeight" />
 
-         <TextView
-            android:id="@+id/tvResultado"
+        <TextView
+            android:id="@+id/tvDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_margin="10dp"
+            android:layout_marginEnd="16dp"
+            android:text="Data ="
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHeight" />
+
+        <TextView
+            android:id="@+id/tvData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint=" ---- "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/tvDate"
+            app:layout_constraintStart_toEndOf="@id/tvDate"
+            app:layout_constraintTop_toTopOf="@id/tvDate" />
+
+        <TextView
+            android:id="@+id/tvDefinition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:hint="peso"
+            android:hint="Resultado"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvAltura" />
+            app:layout_constraintStart_toEndOf="@+id/tvData"
+            app:layout_constraintTop_toTopOf="parent" />
 
-
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="00"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tvDefinition"
+            app:layout_constraintStart_toStartOf="@id/tvDefinition"
+            app:layout_constraintTop_toBottomOf="@id/tvDefinition" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

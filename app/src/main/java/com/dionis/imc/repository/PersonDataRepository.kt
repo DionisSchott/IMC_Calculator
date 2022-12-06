@@ -3,6 +3,8 @@ package com.dionis.imc.repository
 import androidx.lifecycle.LiveData
 import com.dionis.imc.dao.PersonDataDao
 import com.dionis.imc.model.PersonData
+import java.text.DateFormat
+import java.util.*
 
 class PersonDataRepository(private val personDataDao: PersonDataDao) {
 
@@ -10,8 +12,8 @@ class PersonDataRepository(private val personDataDao: PersonDataDao) {
         get() = personDataDao.getAll()
 
 
-    suspend fun save(Person: String, altura: Float, peso: Float, resultado: Float) {
-        personDataDao.save(PersonData(nome = Person, altura = altura, peso = peso, resultado = resultado))
+    suspend fun save(Person: String, altura: Float, peso: Float, resultado: Float, data: String) {
+        personDataDao.save(PersonData(nome = Person, altura = altura, peso = peso, resultado = resultado, data = data))
     }
 
     suspend fun update(person: PersonData) {
